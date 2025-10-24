@@ -12,7 +12,7 @@ configMapGenerator:
     envs:
       - .env
     name: it-request-frontend-config
-    namespace: production
+    namespace: staging  
 resources:
   - ../../base
 images:

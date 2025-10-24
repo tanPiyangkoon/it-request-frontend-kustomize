@@ -9,9 +9,9 @@ resources:
 labels:
 - includeSelectors: true
   pairs:
-    app: it-request
+    app: it-request-frontend
 configMapGenerator:
-  - name: it-request-config
-    namespace: production
+  - name: it-request-frontend-config
+    namespace: staging
     envs: [.env]
     behavior: create

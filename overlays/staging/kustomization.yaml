@@ -5,5 +5,5 @@ resources:
   - ../../base
 
 images:
-  - name: tanpiyangkoon/it-request-backend
+  - name: tanpiyangkoon/it-request-frontend
     newTag: latest

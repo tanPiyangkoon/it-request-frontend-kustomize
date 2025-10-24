@@ -1,21 +1,21 @@
 apiVersion: "apps/v1"
 kind: "Deployment"
 metadata:
-  name: it-request
-  namespace: "production"
+  name: it-request-frontend
+  namespace: "staging"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: it-request
+      app: it-request-frontend
   template:
     metadata:
       labels:
-        app: it-request
+        app: it-request-frontend
     spec:
       containers:
-      - name: it-request
-        image: tanpiyangkoon/it-request
+      - name: it-request-frontend
+        image: tanpiyangkoon/it-request-frontend
         resources:
           limits:
             cpu: 200m
@@ -25,6 +25,6 @@ spec:
             memory: 256Mi
         envFrom:
           - secretRef:
-              name: it-request-secret
+              name: it-request-frontend-secret
 
     

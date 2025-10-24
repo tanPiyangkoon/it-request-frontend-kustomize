@@ -1,17 +1,16 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
 resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
-
 labels:
-- includeSelectors: true
-  pairs:
-    app: it-request-frontend
+  - includeSelectors: true
+    pairs:
+      app: it-request-frontend
 configMapGenerator:
   - name: it-request-frontend-config
     namespace: staging
     envs: [.env]
     behavior: create
+images: []

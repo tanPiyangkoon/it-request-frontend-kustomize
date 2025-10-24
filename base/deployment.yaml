@@ -1,0 +1,30 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: it-request
+  namespace: "production"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: it-request
+  template:
+    metadata:
+      labels:
+        app: it-request
+    spec:
+      containers:
+      - name: it-request
+        image: tanpiyangkoon/it-request
+        resources:
+          limits:
+            cpu: 200m
+            memory: 512Mi
+          requests:
+            cpu: 100m
+            memory: 256Mi
+        envFrom:
+          - secretRef:
+              name: it-request-secret
+
+    

@@ -15,14 +15,14 @@ spec:
     spec:
       containers:
       - name: it-request-frontend
-        image: tanpiyangkoon/it-request-frontend
-        resources:
-          limits:
-            cpu: 200m
-            memory: 512Mi
-          requests:
-            cpu: 100m
-            memory: 256Mi
+        image: tanpiyangkoon/it-request-frontend:asd
+        # resources:
+        #   limits:
+        #     cpu: 200m
+        #     memory: 512Mi
+        #   requests:
+        #     cpu: 100m
+        #     memory: 256Mi
         envFrom:
           - secretRef:
               name: it-request-frontend-secret

@@ -13,4 +13,4 @@ configMapGenerator:
     namespace: staging
     envs: [.env]
     behavior: create
-
+images: []

@@ -15,6 +15,5 @@ secretGenerator:
 resources:
   - ../../base
 images:
-- name: tanpiyangkoon/it-request-frontend:asd
-  newName: tanpiyangkoon/it-request-frontend
-  newTag: ""
+- name: tanpiyangkoon/it-request-frontend
+  newTag: "a38d3a8"

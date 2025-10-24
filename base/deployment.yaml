@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: it-request-frontend
-        image: tanpiyangkoon/it-request-frontend:asd
+        image: tanpiyangkoon/it-request-frontend
         # resources:
         #   limits:
         #     cpu: 200m

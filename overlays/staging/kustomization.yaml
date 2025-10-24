@@ -12,9 +12,9 @@ configMapGenerator:
     envs:
       - .env
     name: it-request-frontend-config
-    namespace: staging  
+    namespace: staging
 resources:
   - ../../base
 images:
   - name: tanpiyangkoon/it-request-frontend
-    newTag: staging-c857a4be003-101
+    newTag: staging-c857a4be003-102

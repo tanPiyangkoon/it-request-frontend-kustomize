@@ -16,4 +16,4 @@ resources:
   - ../../base
 images:
   - name: tanpiyangkoon/it-request-frontend
-    newTag: ""
+    newTag: "77f2072"

@@ -17,4 +17,4 @@ resources:
   - ../../base
 images:
   - name: 192.168.2.55:30082/it-request-frontend
-    newTag: staging-464f024c9e7-115
+    newTag: staging-91232b7bf17-5
